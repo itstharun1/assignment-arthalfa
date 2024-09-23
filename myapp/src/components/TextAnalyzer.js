@@ -29,7 +29,8 @@ const TextAnalyzer = () => {
   };
 
   return (
-    <div className="container">
+
+        <div className="container">
       <h2>Text Analyzer</h2>
       <textarea
         value={text}
@@ -57,6 +58,7 @@ const TextAnalyzer = () => {
         <button onClick={handleReplace}>Replace</button>
       </div>
       <div className="highlighted-text" dangerouslySetInnerHTML={{ __html: highlightedText }}></div>
+
     </div>
   );
 };
